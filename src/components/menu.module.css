@@ -1,0 +1,88 @@
+header {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    max-width: 1360px;
+    padding:1.5rem 1rem 1rem 1rem;
+
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 0 0 auto;
+}
+
+header ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li:not(:first-child):not(:last-child) {
+    margin: 0 1rem;
+}
+
+header ul li:first-child{
+    margin: 0 1rem 0 0
+}
+
+header ul li:last-child {
+    margin: 0 0 0 1rem
+}
+
+.menu {
+    display: none;
+}
+
+header li, li a {
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand {
+    font-weight: 800;
+}
+
+.menuIcon {
+    width: 36px;
+    height:36px;
+}
+
+.mobileMenu {
+    font-size: 100%;
+    line-height: initial;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .brand{
+        font-size: 2rem;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+   
+    
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .menu {
+        display: flex;
+    }
+    .mobileMenu {
+        display: none;
+    }
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    
+}

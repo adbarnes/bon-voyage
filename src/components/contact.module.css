@@ -1,0 +1,132 @@
+.divider {
+    width: 285px;
+    background-color: #22A4EE;
+    height: 13px;
+}
+
+/* .bold {
+    font-weight: bold;
+}
+
+.right 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+} */
+
+.container {
+    margin:auto;
+    max-width: 1360px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.container h2:first-child {
+    margin-top: 1.5rem;
+}
+
+.container h2 {
+    margin-top: 2.5rem;
+}
+
+.container p {
+    max-width: 560px;
+}
+
+.contact-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    -webkit-box-shadow: 0px 0px 16px -1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 16px -1px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 16px -1px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact-container .intro {
+    background-image: url('../images/contact-bg.jpg');
+    padding: 3rem;
+    background-size: cover;
+    color: #fff;
+    /* border-radius: 10px 0px 0px 10px */
+}
+
+.contact-container .form {
+    background-color: #22A4EE;
+    padding: 3rem;
+    /* border-radius: 0px 10px 10px 0px */
+}
+
+.contact-container label {
+    color: #fff;
+    font-size: 0.8003em;
+}
+
+.contact-container .form input, textarea {
+    border:none;
+    padding: 0.5rem
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: rgb(133, 133, 133);
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer */
+    color: rgb(133, 133, 133);
+  }
+  
+  ::placeholder {
+    color:  rgb(133, 133, 133);
+  }
+
+
+
+.contact-container .form input[type=submit]{
+    width: 200px;
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: none;
+    color: #22A4EE;
+    font-weight: 800;
+}
+
+.contact-container .form .section{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container .form .section:last-of-type{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact-container .form form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    
+}

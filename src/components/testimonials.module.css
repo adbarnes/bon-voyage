@@ -1,0 +1,113 @@
+/*  Testimonials */
+
+.divider {
+    width: 285px;
+    background-color: #22A4EE;
+    height: 13px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.right 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.container {
+    margin:auto;
+    max-width: 1360px;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+.container h2:first-child {
+    margin-top: 1.5rem;
+}
+
+.container h2 {
+    margin-top: 2.5rem;
+}
+
+.container p {
+    max-width: 560px;
+}
+
+.top-curve {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    position:absolute;
+    top:-1px;
+    width: 100%;
+}
+
+.bottom-curve {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position:absolute;
+    bottom:-1px;
+    width: 100%;
+}
+
+.testimonials-container {
+    background-image: url(../images/testimonials-bg.jpg);
+    background-size: cover;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+.testimonials-container .content{
+    position: relative;
+    margin:auto;
+    max-width: 1360px;
+    padding: 0.5rem;
+}
+.testimonials-container .content-box
+{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 630px;
+    max-height: 969px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 10rem 0rem 10rem auto;
+    padding: 3rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 7px;   
+}
+
+    .testimonials-container .content-border {
+        position: absolute;
+        top: -20px;
+        left: -100px;
+        border: 2px solid #fff;
+        max-width: 685px;
+        max-height: 669px;
+        width:100%;
+        height:100%;
+    }
+
+.testimonials-container .testimonial-mugshot {
+    margin: 1rem auto 2rem auto;
+}
+
+.testimonial-text {
+    line-height: 2.2rem;
+    font-size: 1.333333rem;
+    margin-top: 2rem
+}
+
+.testimonial-review {
+    display: flex;
+}
+
+.testimonial-review img {
+    margin: 0.2rem
+}
+
+/*  Testimonials -----------*/

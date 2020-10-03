@@ -1,0 +1,73 @@
+.divider {
+    width: 285px;
+    background-color: #22A4EE;
+    height: 13px;
+}
+
+.container {
+    margin:auto;
+    max-width: 1360px;
+    margin-bottom: 0;
+    padding: 1rem
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: none;
+    /* column-gap: 2.33em;
+    row-gap:  2.33em; */
+    grid-gap:29px;
+    margin-top:2rem
+}
+
+.card {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0px 15px #828a94; 
+    /* width: 425px; */
+    /* max-height: 335px; */
+}
+
+.card img {
+    border-radius: 10px;
+}
+
+.card-tag {
+    position: absolute;
+    min-width:130px;
+    top: 20px;
+    right: 0;
+    padding: 0.1rem 0.5rem;
+    background-color: #0C4F75;
+    color: #fff;
+    z-index:1;
+    letter-spacing: 0.007rem;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(415px, 1fr));
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { 
+
+    .hero h1 {
+        max-width:792px;
+        font-size:9rem;
+        line-height: 7rem; 
+    }
+ } */
+
+/* // Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { 
+
+} */
+
+/* // Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { 
+
+    
+} */
