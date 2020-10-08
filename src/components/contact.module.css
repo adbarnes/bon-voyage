@@ -47,7 +47,7 @@
 }
 
 .contact-container .intro {
-    background-image: url('../images/contact-bg.jpg');
+    /* background-image: url('../images/contact-bg.jpg'); */
     padding: 3rem;
     background-size: cover;
     color: #fff;

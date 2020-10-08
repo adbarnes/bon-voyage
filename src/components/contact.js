@@ -1,8 +1,24 @@
 import React from "react"
 import contactStyles from "./contact.module.css"
+import BackgroundImage from 'gatsby-background-image'
+import { useStaticQuery, graphql } from 'gatsby'
 
+function Contact(props) {
 
-function contact(props) {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        indexImage: file(relativePath: { eq: "contact-bg.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1920) {
+              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluidLimitPresentationSize
+            }
+          }
+        }
+      }
+    `
+  )
   return (
     <div className={contactStyles.container}>
       <h2>{props.heading}</h2>
@@ -12,7 +28,11 @@ function contact(props) {
       </p>
       <div className={contactStyles.divider}></div>
       <div className={contactStyles.contactContainer}>
-        <div className={contactStyles.intro}>
+      <BackgroundImage
+      style={{backgroundSize: 'cover'}}
+      className={contactStyles.intro}
+      fluid={data.indexImage.childImageSharp.fluid}>
+        
           <h3>Have a question?</h3>
 
           <p>
@@ -34,7 +54,8 @@ function contact(props) {
             Note: Vivamus tempor nunc vel nisi tristique, id ultrices massa
             dictum.
           </p>
-        </div>
+        
+        </BackgroundImage>
         <div className={contactStyles.form}>
           <form>
             <div className={contactStyles.section}>
@@ -64,4 +85,4 @@ function contact(props) {
   )
 }
 
-export default contact
+export default Contact
