@@ -6,8 +6,6 @@ import News from "../components/news"
 import Testimonials from "../components/testimonials"
 import Footer from '../components/footer'
 
-
-
 export default function Home({ data }) {
   return (
     <Layout>

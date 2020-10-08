@@ -11,6 +11,7 @@ module.exports = {
     title: `Title from siteMetadata`,
   },
   plugins: [
+    `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
