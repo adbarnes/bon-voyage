@@ -17,7 +17,8 @@
 .footer-container .container {
     margin: auto;
     max-width: 1360px;
-    padding: 1rem;
+    padding: 3rem 1rem;
+
 }
 
 .footer .section {
