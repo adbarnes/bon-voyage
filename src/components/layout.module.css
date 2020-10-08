@@ -21,11 +21,12 @@ h2 {
     /* margin:auto;
     max-width: 1360px;
     padding-top:1.5rem; */
-    background-image: url(../images/header-bg.jpg);
+    /* background-image: url(../images/header-bg.jpg); */
     background-size: cover;
-    padding-bottom: 8rem;
+    padding-bottom: 12rem;
     position: relative;
     margin-bottom: 2rem;
+    z-index:200
 }
 /* 
 
