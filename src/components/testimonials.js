@@ -2,19 +2,28 @@ import React from "react"
 import bottomCurve from '../../src/images/curve-bottom.svg'
 import star from '../../src/images/star.svg'
 import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
+import BackgroundImage from 'gatsby-background-image'
+import { useStaticQuery, graphql } from 'gatsby'
 import testimonialsStyles from "./testimonials.module.css"
 
 export default function Testimonials(props) {
     const data = useStaticQuery(
         graphql`
             query {
-            file(relativePath: { eq: "head.png" }) {
+            testImage: file(relativePath: { eq: "head.png" }) {
                 childImageSharp {
                 fixed(width: 167, height: 167) {
                     ...GatsbyImageSharpFixed
                 }
                 }
+            }
+            indexImage: file(relativePath: { eq: "testimonials-bg.jpg" }) {
+              childImageSharp {
+                fluid(maxWidth: 1920) {
+                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluidLimitPresentationSize
+                }
+              }
             }
         }
     `)
@@ -31,12 +40,15 @@ export default function Testimonials(props) {
           <div className={testimonialsStyles.divider}></div>
         </div>
       </div>
+      <BackgroundImage
+      style={{backgroundSize: 'cover'}}
+      className={testimonialsStyles.headerContainer}
+      fluid={data.indexImage.childImageSharp.fluid}>
       <div className={testimonialsStyles.testimonialsContainer}>
         <img className={testimonialsStyles.topCurve} src={bottomCurve} alt="Top Curve" />
         <div className={testimonialsStyles.content}>
-          <div className={testimonialsStyles.contentBox}>
-            {/* <div className={testimonialsStyles.contentBorder}></div> */}
-            <Img fixed={data.file.childImageSharp.fixed} alt="A boat from above" />
+          <div data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease" className={testimonialsStyles.contentBox}>
+            <Img fixed={data.testImage.childImageSharp.fixed} alt="Testimonial person face" />
             
             <p className={testimonialsStyles.testimonialText}>
               “Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -56,6 +68,7 @@ export default function Testimonials(props) {
         </div>
         <img className={testimonialsStyles.bottomCurve} src={bottomCurve} alt="Bottom Curve" />
       </div>
+      </BackgroundImage>
     </>
   )
 }
