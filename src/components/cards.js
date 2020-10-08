@@ -40,7 +40,7 @@ we create truly memorable experiences that you will cherish forever.
       <div className={cardsStyles.cards}>
         
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div className={cardsStyles.card} key={node.id} >
+          <div data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease" className={cardsStyles.card} key={node.id} >
            
              <div className={cardsStyles.cardTag}> {node.frontmatter.title}</div>
             
