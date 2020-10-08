@@ -13,7 +13,8 @@
     margin:auto;
     max-width: 1360px;
     color: #fff;
-    padding:1rem;
+    padding:6rem 1rem 1rem 1rem;
+    z-index:2
 }
 
 .hero-border{
@@ -26,7 +27,16 @@
    -webkit-box-shadow:inset 0px 0px 0px 20px rgba(255, 255, 255, 0.10);
    -moz-box-shadow:inset 0px 0px 0px 20px rgba(255, 255, 255, 0.10);
    box-shadow:inset 0px 0px 0px 20px rgba(255, 255, 255, 0.10);
-   left:0
+   left:0;
+   z-index: -1
+}
+
+.heading-container {
+    min-height:540px;
+}
+
+.heading-container > div {
+    overflow: hidden;
 }
 
 .hero h1 {
