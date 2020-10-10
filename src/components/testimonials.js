@@ -31,10 +31,9 @@ export default function Testimonials(props) {
     <>
       <div className={testimonialsStyles.container}>
         <div className={testimonialsStyles.right}>
-          <h2>Testimonials</h2>
-          <p>
-            For anything that brings people together to celebrate an occasion,
-            we create truly memorable experiences that you will cherish forever.
+          <h2 data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease">Testimonials</h2>
+          <p data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease">
+            See the amazing comments our customers have left about Bon Voyage Trips and its 5-star rated trips and expeditions.
           </p>
 
           <div className={testimonialsStyles.divider}></div>
@@ -47,22 +46,19 @@ export default function Testimonials(props) {
       <div className={testimonialsStyles.testimonialsContainer}>
         <img className={testimonialsStyles.topCurve} src={bottomCurve} alt="Top Curve" />
         <div className={testimonialsStyles.content}>
-          <div data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease" className={testimonialsStyles.contentBox}>
+          <div data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease" className={testimonialsStyles.contentBox}>
             <Img fixed={data.testImage.childImageSharp.fixed} alt="Testimonial person face" />
             
             <p className={testimonialsStyles.testimonialText}>
-              “Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry’s standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book."
+              “Bon Voyage have been brilliant from start to finish.  I can't recommend them enough.  The whole process was so simple, we had a superb holiday."
             </p>
             <p className={testimonialsStyles.bold}>Mark, Wimbledon.</p>
             <div className={testimonialsStyles.testimonialReview}>
-              <img src={star} alt="star" />
-              <img src={star} alt="star" />
-              <img src={star} alt="star" />
-              <img src={star} alt="star" />
-              <img src={star} alt="star" />
+              <img width="29" height="27" src={star} alt="star" />
+              <img width="29" height="27" src={star} alt="star" />
+              <img width="29" height="27" src={star} alt="star" />
+              <img width="29" height="27" src={star} alt="star" />
+              <img width="29" height="27" src={star} alt="star" />
             </div>
           </div>
         </div>
@@ -73,16 +69,5 @@ export default function Testimonials(props) {
   )
 }
 
-// export const query = graphql`
-// query MyQuery {
-//   file(relativePath: {eq: "head.png"}) {
-//     childImageSharp {
-//       fixed(width: 167, height: 167) {
-//         ...GatsbyImageSharpFixed
-//       }
-//     }
-//   }
-// }
-// `
 
 

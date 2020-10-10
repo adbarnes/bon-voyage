@@ -36,10 +36,9 @@ export default function News(props) {
     <>
       <div className={newsStyles.container}>
         <div className={newsStyles.right}>
-          <h2>{props.heading}</h2>
-          <p>
-            For anything that brings people together to celebrate an occasion,
-            we create truly memorable experiences that you will cherish forever.
+          <h2 data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease">{props.heading}</h2>
+          <p data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease">
+          Regularly updated news, articles, guides and blogs about Bon Voyage and its services.
           </p>
           <div className={newsStyles.divider}></div>
         </div>
@@ -48,7 +47,7 @@ export default function News(props) {
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <div
               data-sal="slide-up"
-              data-sal-delay="300"
+              data-sal-delay="100"
               data-sal-easing="ease"
               className={newsStyles.newsItem}
               key={node.id}

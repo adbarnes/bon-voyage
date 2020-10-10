@@ -21,10 +21,9 @@ function Contact(props) {
   )
   return (
     <div className={contactStyles.container}>
-      <h2>{props.heading}</h2>
-      <p>
-        For anything that brings people together to celebrate an occasion, we
-        create truly memorable experiences that you will cherish forever.
+      <h2 data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease">{props.heading}</h2>
+      <p data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease">
+        Contact us below with any questions or queries you may have about Bon Voyage trips and expeditions.
       </p>
       <div className={contactStyles.divider}></div>
       <div className={contactStyles.contactContainer}>
@@ -60,23 +59,22 @@ function Contact(props) {
           <form>
             <div className={contactStyles.section}>
               <label htmlFor="fname">First name:</label>
-              <input type="text" id="fname" name="fname" placeholder="John" />
+              <input type="text" id="fname" placeholder="John" />
             </div>
             <div className={contactStyles.section}>
               <label htmlFor="lname">Last name:</label>
-              <input type="text" id="lname" name="lname" placeholder="Smith" />
+              <input type="text" id="lname" placeholder="Smith" />
             </div>
             <div className={contactStyles.section}>
-              <label htmlFor="lname">Message:</label>
+              <label htmlFor="message">Message:</label>
               <textarea
                 id="message"
-                name="w3review"
                 rows="4"
                 cols="50"
               ></textarea>
             </div>
             <div className={contactStyles.section}>
-              <input type="submit" value="Submit" />
+              <input type="submit" value="SUBMIT" />
             </div>
           </form>
         </div>
