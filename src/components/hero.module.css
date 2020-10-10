@@ -13,7 +13,7 @@
     margin:auto;
     max-width: 1360px;
     color: #fff;
-    padding:6rem 1rem 1rem 1rem;
+    padding:6rem 1rem 1rem 3rem;
     z-index:2
 }
 
@@ -65,7 +65,12 @@
     padding:1rem 2rem;
     border-radius: 50px;
     font-weight: 700;
-    margin: 2rem 0 2rem 0
+    margin: 2rem 0 2rem 0;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: hsl(202, 86%, 43%);
 }
 
 .img-wrapper {
