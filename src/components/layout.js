@@ -41,18 +41,7 @@ export default function Layout( { children }) {
   )
 }
 
-// export const pageQuery = 
-//   graphql`
-//     query {
-//       indexImage: file(relativePath: { eq: "header-bg.jpg" }) {
-//         childImageSharp {
-//           fluid(maxWidth: 754) {
-//             ...GatsbyImageSharpFluid
-//           }
-//         }
-//       }
-//     }
-//   `
+
 
 
 
