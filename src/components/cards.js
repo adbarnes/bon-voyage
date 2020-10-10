@@ -1,14 +1,17 @@
-import React from 'react';
+import React from "react"
 import cardsStyles from "./cards.module.css"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 export default function Card() {
-    const data = useStaticQuery(
+  const data = useStaticQuery(
     graphql`
-    query {
-      allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {fileAbsolutePath: {regex: "\\/destinations/"}}) {
-        totalCount
+      query {
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }
+          filter: { fileAbsolutePath: { regex: "/destinations/" } }
+        ) {
+          totalCount
           edges {
             node {
               id
@@ -27,31 +30,41 @@ export default function Card() {
           }
         }
       }
-  `)
-    return ( 
-        <> 
-         <div className={cardsStyles.container}>
-      <h2>Destinations</h2>
-      <p>For anything that brings people together to celebrate an occasion, 
-we create truly memorable experiences that you will cherish forever.
-</p>
-<div className={cardsStyles.divider}></div>
+    `
+  )
+  return (
+    <>
+      <div className={cardsStyles.container}>
+        <h2 data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease">
+          Destinations
+        </h2>
+        <p data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease">
+          Our trips cater for all budgets. Select your destination below for
+          more information and booking details.
+        </p>
+        <div className={cardsStyles.divider}></div>
 
-      <div className={cardsStyles.cards}>
-        
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease" className={cardsStyles.card} key={node.id} >
-           
-             <div className={cardsStyles.cardTag}> {node.frontmatter.title}</div>
-            
-            <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
-            
-          </div>
-        ))}
-      
-        
+        <div className={cardsStyles.cards}>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div
+              data-sal="slide-up"
+              data-sal-delay="100"
+              data-sal-easing="ease"
+              className={cardsStyles.card}
+              key={node.id}
+            >
+              <div className={cardsStyles.cardTag}>
+                {" "}
+                {node.frontmatter.title}
+              </div>
+
+              <Img
+                fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
+              />
+            </div>
+          ))}
         </div>
-        </div>
-        </>
-    );
+      </div>
+    </>
+  )
 }
