@@ -11,6 +11,7 @@ module.exports = {
     title: `Title from siteMetadata`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
