@@ -1,34 +1,10 @@
 import Typography from 'typography'
-// import sutroTheme from 'typography-theme-sutro'
-// sutroTheme.baseFontSize = '22px' // was 20px.
-// sutroTheme.bodyFontFamily = ["Helvetica", 'sans-serif']
-
-
-// sutroTheme.overrideThemeStyles = () => ({
-//     'a': {
-//       color: "#ffffff",
-//       },
-//       '.brand': {
-//           fontFamily: "Open Sans",
-//           fontWeight: 800,
-//           fontSize: "2rem",
-//           textTransform: "uppercase"
-//       },
-//       'h2': {
-//         fontWeight: 800,
-//         fontSize: "2.3rem",
-//       }
-//   })
-
-
-
-  // const typography = new Typography(sutroTheme)
 
 const typography = new Typography({
   googleFonts: [
     {
       name: 'Nunito',
-      styles: [],
+      styles: ["&display=swap"],
     },
   ],
   baseFontSize: "18px",
