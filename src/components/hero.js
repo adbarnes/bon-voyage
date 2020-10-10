@@ -17,7 +17,6 @@ export default function Hero() {
           childImageSharp {
             fluid(maxWidth: 754) {
               ...GatsbyImageSharpFluid
-              ...GatsbyImageSharpFluidLimitPresentationSize
             }
           }
         }
@@ -40,8 +39,8 @@ export default function Hero() {
         </animated.div>
         </div>
         <div className={heroStyles.divider}></div>
-        <p>Set sale on the ocean waves and make your dreams come true.</p>
-        <Link className={heroStyles.btn} to="/">
+        <p data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease" className={heroStyles.subtitle}>Set sale on the ocean waves and make your dreams come true.</p>
+        <Link data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease" className={heroStyles.btn} to="/">
           BOOK NOW
         </Link>
       </div>
