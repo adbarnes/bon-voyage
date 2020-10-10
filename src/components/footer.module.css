@@ -78,12 +78,19 @@
 .footer input[type=submit] {
     width: 200px;
     padding: 0.5rem;
-    border-radius: 3px;
+    border-radius: 50px;
     border: none;
     background-color: #22A4EE;
     color: #fff;
     font-weight: 800;
+    transition: 0.3s;
 }
+
+.footer input[type=submit]:hover{
+    background-color: hsl(202, 86%, 43%);
+     cursor: pointer;
+     color: #fff;
+ }
 
 .footer {
     display: grid;
