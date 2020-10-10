@@ -4,22 +4,12 @@
     height: 13px;
 }
 
-/* .bold {
-    font-weight: bold;
-}
-
-.right 
-{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-} */
-
 .container {
     margin:auto;
     max-width: 1360px;
     margin-bottom: 2rem;
     padding: 1rem;
+    overflow: hidden; /* Added to stop off canvas animation causing overflow on mobile*/
 }
 
 .container h2:first-child {
@@ -47,17 +37,14 @@
 }
 
 .contact-container .intro {
-    /* background-image: url('../images/contact-bg.jpg'); */
     padding: 3rem;
     background-size: cover;
     color: #fff;
-    /* border-radius: 10px 0px 0px 10px */
 }
 
 .contact-container .form {
     background-color: #22A4EE;
     padding: 3rem;
-    /* border-radius: 0px 10px 10px 0px */
 }
 
 .contact-container label {
@@ -87,10 +74,17 @@
 .contact-container .form input[type=submit]{
     width: 200px;
     padding: 0.5rem;
-    border-radius: 3px;
+    border-radius: 50px;
     border: none;
     color: #22A4EE;
     font-weight: 800;
+    transition: 0.3s;
+}
+
+.contact-container .form input[type=submit]:hover{
+   background-color: hsl(202, 86%, 43%);
+    cursor: pointer;
+    color: #fff;
 }
 
 .contact-container .form .section{

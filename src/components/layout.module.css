@@ -1,3 +1,7 @@
+@font-face{
+    font-display: swap;
+}
+
 *, img {
     padding: 0;
     margin: 0;
@@ -18,10 +22,6 @@ h2 {
 
 
 .header-container {
-    /* margin:auto;
-    max-width: 1360px;
-    padding-top:1.5rem; */
-    /* background-image: url(../images/header-bg.jpg); */
     background-size: cover;
     padding-bottom: 12rem;
     position: relative;

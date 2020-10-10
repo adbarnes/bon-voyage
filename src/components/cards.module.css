@@ -8,14 +8,13 @@
     margin:auto;
     max-width: 1360px;
     margin-bottom: 0;
-    padding: 1rem
+    padding: 1rem;
+    overflow: hidden; /* Added to stop off canvas animation causing overflow on mobile*/
 }
 
 .cards {
     display: grid;
     grid-template-columns: none;
-    /* column-gap: 2.33em;
-    row-gap:  2.33em; */
     grid-gap:29px;
     margin-top:2rem
 }
@@ -24,8 +23,6 @@
     position: relative;
     border-radius: 10px;
     box-shadow: 0 0px 15px #828a94; 
-    /* width: 425px; */
-    /* max-height: 335px; */
 }
 
 .card img {
@@ -51,23 +48,3 @@
     }
  }
 
-/* // Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) { 
-
-    .hero h1 {
-        max-width:792px;
-        font-size:9rem;
-        line-height: 7rem; 
-    }
- } */
-
-/* // Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) { 
-
-} */
-
-/* // Extra large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) { 
-
-    
-} */
