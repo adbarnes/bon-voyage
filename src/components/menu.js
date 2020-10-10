@@ -37,10 +37,10 @@ class header extends Component {
        
            <ul className={menuStyles.menu}>
              <ListLink to="/">HOME</ListLink>
-             <ListLink to="/about/">ABOUT</ListLink>
-             <ListLink to="/contact/">CONTACT</ListLink>
-             <ListLink to="/contact/">BLOG</ListLink>
-             <ListLink to="/contact/">BOOK NOW</ListLink>
+             <ListLink to="/">ABOUT</ListLink>
+             <ListLink to="/">CONTACT</ListLink>
+             <ListLink to="/">BLOG</ListLink>
+             <ListLink to="/">BOOK NOW</ListLink>
            </ul>
        </header>
        </div>
@@ -49,32 +49,3 @@ class header extends Component {
 }
 
 export default header;
-// import React from 'react';
-// import { Link } from "gatsby"
-// import menuStyles from './menu.module.css'
-
-// const ListLink = props => (
-//     <li>
-//       <Link to={props.to}>{props.children}</Link>
-//     </li>
-//   )
-
-// function header(props) {
-//     return (
-//         <header>
-//         <Link className={menuStyles.brand} to="/">
-//           Bon voyage trips 
-//         </Link>
-       
-//           <ul className={menuStyles.menu}>
-//             <ListLink to="/">HOME</ListLink>
-//             <ListLink to="/about/">ABOUT</ListLink>
-//             <ListLink to="/contact/">CONTACT</ListLink>
-//             <ListLink to="/contact/">BLOG</ListLink>
-//             <ListLink to="/contact/">BOOK NOW</ListLink>
-//           </ul>
-//       </header>
-//     );
-// }
-
-// export default header;
