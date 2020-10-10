@@ -9,17 +9,17 @@ function footer(props) {
       <div className={`${footerStyles.container} ${footerStyles.footer}`}>
         <div><h3>BON VOYAGE TRIPS</h3>
         <div className={footerStyles.divider}></div>
-        <p>For anything that brings people together to celebrate an occasion.</p>
+        <p>Incredible experinces to share with your loved ones.</p>
         <p>we create truly memorable experiences that you will cherish forever.</p>
         </div>
         <div><h3>NEWSLETTER</h3>
         <div className={footerStyles.divider}></div>
         <form>
             <div className={footerStyles.section}>
-              <input type="email" id="fname" name="fname" placeholder="name@email.com" />
+              <input type="email" id="email" name="email" aria-label="Newsletter signup" placeholder="name@email.com" />
             </div>
             <div className={footerStyles.section}>
-              <input type="submit" value="Submit" />
+              <input type="submit" value="SUBMIT" />
             </div>
           </form>
         </div>
@@ -36,8 +36,8 @@ function footer(props) {
         <div><h3>SERVICES</h3>
         <div className={footerStyles.divider}></div>
         <ul className={footerStyles.address}>
-            <li>1 Roadtown Street, The Yacht Building, British Virgin Islands</li>
-            <li>0800 123554</li>
+            <li>1 Roadtown Street, The Boat Building, British Virgin Islands</li>
+            <li>0800 123456</li>
             <li>contact@bonvoyagetrips.com</li>
         </ul>
         </div>
