@@ -7,7 +7,7 @@
 
 
 module.exports = {
-  pathPrefix: "/bon-voyage",
+  pathPrefix: `/bon-voyage`,
   siteMetadata: {
     title: `Title from siteMetadata`,
   },
