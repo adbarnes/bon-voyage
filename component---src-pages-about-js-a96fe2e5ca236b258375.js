@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"3XHS":function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return r}));var a=t("q1tI"),u=t.n(a),l=t("Bl7J");function r(){return u.a.createElement(l.a,null,u.a.createElement("h1",null,"About page"),u.a.createElement("p",null,"Body text"))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-a96fe2e5ca236b258375.js.map
