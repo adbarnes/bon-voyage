@@ -79,6 +79,7 @@
     color: #22A4EE;
     font-weight: 800;
     transition: 0.3s;
+    line-height: 2rem;
 }
 
 .contact-container .form input[type=submit]:hover{
