@@ -24,7 +24,7 @@ export default function Hero() {
     `
   )
   return (
-    <>
+    <section>
       <div className={heroStyles.hero}>
         <div className={heroStyles.heroBorder}></div>
         <div className={heroStyles.imgWrapper}>
@@ -50,6 +50,6 @@ export default function Hero() {
         src={bottomCurve}
         alt="Bottom Curve"
       />
-    </>
+    </section>
   )
 }
