@@ -5,8 +5,8 @@ import bottomCurve from "../../src/images/curve-bottom.svg"
 function footer(props) {
   return (
     <div className={footerStyles.footerContainer}>
-      <img className={footerStyles.topCurve} src={bottomCurve} alt="Top Curve" />
-      <div className={`${footerStyles.container} ${footerStyles.footer}`}>
+      <img className={footerStyles.topCurve} src={bottomCurve} alt="Wavey section divider" />
+      <footer className={`${footerStyles.container} ${footerStyles.footer}`}>
         <div><h3>BON VOYAGE TRIPS</h3>
         <div className={footerStyles.divider}></div>
         <p>Incredible experinces to share with your loved ones.</p>
@@ -41,7 +41,7 @@ function footer(props) {
             <li>contact@bonvoyagetrips.com</li>
         </ul>
         </div>
-      </div>
+      </footer>
     </div>
   )
 }
