@@ -33,7 +33,7 @@ export default function News(props) {
     `
   )
   return (
-    <>
+    <section>
       <div className={newsStyles.container}>
         <div className={newsStyles.right}>
           <h2 data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease">{props.heading}</h2>
@@ -66,6 +66,6 @@ export default function News(props) {
           ))}
         </div>
       </div>
-    </>
+    </section>
   )
 }

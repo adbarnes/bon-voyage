@@ -33,7 +33,7 @@ export default function Card() {
     `
   )
   return (
-    <>
+    <section>
       <div className={cardsStyles.container}>
         <h2 data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease">
           Destinations
@@ -65,6 +65,6 @@ export default function Card() {
           ))}
         </div>
       </div>
-    </>
+    </section>
   )
 }

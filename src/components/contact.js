@@ -20,7 +20,7 @@ function Contact(props) {
     `
   )
   return (
-    <div className={contactStyles.container}>
+    <section className={contactStyles.container}>
       <h2 data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease">{props.heading}</h2>
       <p data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease">
         Contact us below with any questions or queries you may have about Bon Voyage trips and expeditions.
@@ -79,7 +79,7 @@ function Contact(props) {
           </form>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

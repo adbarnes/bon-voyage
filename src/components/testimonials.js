@@ -29,7 +29,7 @@ export default function Testimonials(props) {
     `
   )
   return (
-    <>
+    <section>
       <div className={testimonialsStyles.container}>
         <div className={testimonialsStyles.right}>
           <h2
@@ -93,6 +93,6 @@ export default function Testimonials(props) {
           />
         </div>
       </BackgroundImage>
-    </>
+    </section>
   )
 }
