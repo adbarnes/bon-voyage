@@ -30,11 +30,11 @@ class header extends Component {
   render() {
     return (
       <div ref={(r)=>this.ref=r} className={this.state.className}>
-      <header >
+      <header>
+        <nav>
          <Link className={menuStyles.brand} to="/">
           Bon voyage trips 
          </Link>
-       
            <ul className={menuStyles.menu}>
              <ListLink to="/">HOME</ListLink>
              <ListLink to="/">ABOUT</ListLink>
@@ -42,6 +42,7 @@ class header extends Component {
              <ListLink to="/">BLOG</ListLink>
              <ListLink to="/">BOOK NOW</ListLink>
            </ul>
+           </nav>
        </header>
        </div>
     );
