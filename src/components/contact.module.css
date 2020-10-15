@@ -37,14 +37,14 @@
 }
 
 .contact-container .intro {
-    padding: 3rem;
+    padding: 2rem;
     background-size: cover;
     color: #fff;
 }
 
 .contact-container .form {
     background-color: #22A4EE;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .contact-container label {
@@ -113,6 +113,13 @@
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+    .contact-container .intro {
+        padding: 3rem;
+    }
+    
+    .contact-container .form {
+        padding: 3rem;
+    }
  }
 
 /* // Large devices (desktops, 992px and up) */
