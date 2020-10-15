@@ -17,10 +17,12 @@ export default function Home({ data }) {
           <html lang="en-GB" />
     </Helmet>
     <Layout>
+      <main>
       <Cards />
       <Testimonials />
       <Contact heading="CONTACT US" />
       <News heading="NEWS" />
+      </main>
       <Footer />
     </Layout>
     </>
