@@ -74,7 +74,7 @@
     max-width: 630px;
     max-height: 969px;
     background-color: rgba(255, 255, 255, 0.5);
-    margin: 10rem 0rem 10rem auto;
+    margin: 10rem auto;
     padding: 3rem;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -142,6 +142,7 @@ blockquote p::after {
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-
-   
+    .testimonials-container .content-box {
+        margin: 10rem 0rem 10rem auto;
+    }
 }
