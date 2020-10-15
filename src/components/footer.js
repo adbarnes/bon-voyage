@@ -5,41 +5,61 @@ import bottomCurve from "../../src/images/curve-bottom.svg"
 function footer(props) {
   return (
     <div className={footerStyles.footerContainer}>
-      <img className={footerStyles.topCurve} src={bottomCurve} alt="Wavey section divider" />
+      <img
+        className={footerStyles.topCurve}
+        src={bottomCurve}
+        alt="Wavey section divider"
+      />
       <footer className={`${footerStyles.container} ${footerStyles.footer}`}>
-        <div><h3>BON VOYAGE TRIPS</h3>
-        <div className={footerStyles.divider}></div>
-        <p>Incredible experinces to share with your loved ones.</p>
-        <p>we create truly memorable experiences that you will cherish forever.</p>
+        <div>
+          <h3>BON VOYAGE TRIPS</h3>
+          <div className={footerStyles.divider}></div>
+          <p>Incredible experinces to share with your loved ones.</p>
+          <p>
+            we create truly memorable experiences that you will cherish forever.
+          </p>
         </div>
-        <div><h3>NEWSLETTER</h3>
-        <div className={footerStyles.divider}></div>
-        <form>
+        <div>
+          <h3>NEWSLETTER</h3>
+          <div className={footerStyles.divider}></div>
+          <form>
             <div className={footerStyles.section}>
-              <input type="email" id="email" name="email" aria-label="Newsletter signup" placeholder="name@email.com" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                aria-label="Newsletter signup"
+                placeholder="name@email.com"
+              />
             </div>
             <div className={footerStyles.section}>
               <input type="submit" value="SUBMIT" />
             </div>
           </form>
         </div>
-        <div><h3>SERVICES</h3>
-        <div className={footerStyles.divider}></div>
-        <ul>
+        <div>
+          <h3>SERVICES</h3>
+          <div className={footerStyles.divider}></div>
+          <ul>
             <li>Home</li>
             <li>About</li>
             <li>Service</li>
             <li>Book Online</li>
             <li>News</li>
-        </ul>
+          </ul>
         </div>
-        <div><h3>SERVICES</h3>
-        <div className={footerStyles.divider}></div>
-        <ul className={footerStyles.address}>
-            <li>1 Roadtown Street, The Boat Building, British Virgin Islands</li>
-            <li>0800 123456</li>
-            <li>contact@bonvoyagetrips.com</li>
-        </ul>
+        <div>
+          <h3>SERVICES</h3>
+          <div className={footerStyles.divider}></div>
+          <address>
+            <ul className={footerStyles.address}>
+              <li>
+                1 Roadtown Street, The Boat Building, British Virgin Islands
+              </li>
+              <li>0800 123456</li>
+              <li>contact@bonvoyagetrips.com</li>
+            </ul>
+          </address>
         </div>
       </footer>
     </div>
