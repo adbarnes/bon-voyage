@@ -23,177 +23,35 @@ h2 {
 
 .header-container {
     background-size: cover;
-    padding-bottom: 12rem;
+    padding-bottom: 6rem;
     position: relative;
     margin-bottom: 1rem;
     z-index:200
 }
-/* 
 
-
-
-
-
-
-
-
-.header-container a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.container {
-    margin:auto;
-    max-width: 1360px;
-    margin-bottom: 3rem;
-}
-
-.container h2:first-child {
-    margin-top: 1.5rem;
-}
-
-.container h2 {
-    margin-top: 2.5rem;
-}
-
-.container p {
-    max-width: 560px;
-}
-
-.top-curve {
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
-    position:absolute;
-    top:-1px;
-    width: 100%;
-}
-
-.bottom-curve {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    position:absolute;
-    bottom:-1px;
-    width: 100%;
-}
-
-
-
-.hero {
-    position: relative;
-    margin:auto;
-    max-width: 1360px;
-    color: #fff;
-    padding:1rem;
-}
-
-.hero-border{
-    position: absolute;
-    border: 1rem solid transparent;
-    height: 100%;
-    width:100%;
-   padding: 5rem;
-   -webkit-box-shadow:inset 0px 0px 0px 20px rgba(255, 255, 255, 0.10);
-   -moz-box-shadow:inset 0px 0px 0px 20px rgba(255, 255, 255, 0.10);
-   box-shadow:inset 0px 0px 0px 20px rgba(255, 255, 255, 0.10);
-   left:0
-}
-
-.hero h1 {
-    font-size: 7rem;
-    font-weight: 800;
-    line-height: 6rem;
-    letter-spacing: -20px;
-    background: -webkit-linear-gradient(#eee, rgba(255, 255, 255, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: 6rem;
-    max-width:334px
-    }
-
-.hero p {
-    font-size:2rem;
-    font-weight: 400;
-    max-width:400px;
-    line-height: normal;
-    margin: 1rem 0
-}
-
-.hero .btn {
-    display: inline-block;
-    background-color: #22A4EE;
-    padding:1rem 2rem;
-    border-radius: 50px;
-    font-weight: 700;
-    margin: 2rem 0 2rem 0
-}
-
-.img-wrapper {
-    position: absolute !important;
-    right: 0px;
-    position: absolute;
-    top: 40%;
-    width: 50%;
-    height: 50%;
-    object-position: center center;
-}
-
-
-
-
-.divider {
-    width: 285px;
-    background-color: #22A4EE;
-    height: 13px;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.right 
-{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-} */
 
 /* // Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) { 
-    .hero h1 {
-        font-size: 8rem;
-        max-width:none;
-        line-height:6.5rem;
-    }
- } */
+@media (min-width: 576px) { 
+   
+ }
 
 /* // Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) { 
-
-    .hero h1 {
-        max-width:792px;
-        font-size:9rem;
-        line-height: 7rem; 
-    }
- } */
-
-/* // Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) { 
-    .hero h1 {
-        font-size:13rem;
-        max-width:none;
-        line-height: 10rem;
-    }
-    .menu {
-        display: flex;
-    }
-    .hero p {
-        max-width:635px;
-    }
-
-} */
-
-/* // Extra large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) { 
+@media (min-width: 768px) { 
 
     
-} */
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    .header-container {
+        padding-bottom: 12rem;
+    }
+
+}
