@@ -54,7 +54,7 @@
 
 .testimonials-container {
     background-size: cover;
-    padding-bottom: 3rem;
+    padding: 1rem 0;
     position: relative;
 }
 
@@ -74,7 +74,7 @@
     max-width: 630px;
     max-height: 969px;
     background-color: rgba(255, 255, 255, 0.5);
-    margin: 10rem auto;
+    margin: 3rem auto;
     padding: 3rem;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
