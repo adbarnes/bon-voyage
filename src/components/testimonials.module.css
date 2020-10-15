@@ -20,12 +20,11 @@
 .container {
     margin:auto;
     max-width: 1360px;
-    margin-bottom: 3rem;
     padding: 1rem;
 }
 
 .container h2:first-child {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .container h2 {
